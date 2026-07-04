@@ -14,5 +14,13 @@ function calcularMedia(botao){
 
     const colunaMedia = linha.querySelector(".media");
     colunaMedia.textContent = media.toFixed(2);
-
+    
+    let badge ="";
+    if(media >= 7){
+        badge = `<span class="badge bg-success">Aprovado</span>`;
+    }else{
+        badge = `<span class="badge bg-danger">Reprovado</span>`;
+    }
+     const colunaSituacao = linha.querySelector(".status");
+     colunaSituacao.innerHTML = badge;
 }
