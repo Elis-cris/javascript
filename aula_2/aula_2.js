@@ -14,7 +14,8 @@ function calcularMedia(botao) {
 
     const colunaMedia = linha.querySelector(".media");
     colunaMedia.textContent = media.toFixed(2);
-<<<<<<< HEAD
+
+    //<<<<<< HEAD
     //console.log(colunaMedia);
     //const status = media >= 7 ? "Aprovado" : "Reprovado";
 
@@ -30,15 +31,15 @@ function calcularMedia(botao) {
     // colunaStatus.textContent = status;
     colunaStatus.innerHTML = badge;
 
-=======
-    
-    let badge ="";
-    if(media >= 7){
+
+
+    let badge = "";
+    if (media >= 7) {
         badge = `<span class="badge bg-success">Aprovado</span>`;
-    }else{
+    } else {
         badge = `<span class="badge bg-danger">Reprovado</span>`;
     }
-     const colunaSituacao = linha.querySelector(".status");
-     colunaSituacao.innerHTML = badge;
->>>>>>> e8b2d9ca987a4bf663441efb72ac9dac366287fc
+    const colunaSituacao = linha.querySelector(".status");
+    colunaSituacao.innerHTML = badge;
 }
+
